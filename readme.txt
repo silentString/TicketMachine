@@ -1,0 +1,1 @@
+This is a small system about sale ticket, you can understand this project well if you read the requirement.
