@@ -14,6 +14,8 @@ public class ReadConfig {
 	public static String logPath = null;
 	public static String dbName = null;
 	public static String tableName = null;
+	public static String dbUserName = null;
+	public static String dbPassword = null;
 	
 	public static void readConfig(){
 		Properties prop = new Properties();
@@ -28,6 +30,8 @@ public class ReadConfig {
 			stationNames = stations.split("\\|");
 			dbName = prop.getProperty("db_name");
 			tableName = prop.getProperty("table_name");
+			dbUserName = prop.getProperty("db_username");
+			dbPassword = prop.getProperty("db_password");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
