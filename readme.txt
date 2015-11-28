@@ -6,4 +6,4 @@ station_name (text)
 dest_name (text)
 ticket_count (bigint)
 price (bigint)
-and then modify the config.properties file, make "db_use" as Y, "db_name" is your database's name, "table_name" is your table's name.
+and then modify the config.properties file, make "db_use" as Y, "db_name" is your database's name, "table_name" is your table's name."db_username" and "db_password" also need to be set.

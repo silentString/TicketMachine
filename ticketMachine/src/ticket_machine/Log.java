@@ -76,7 +76,7 @@ public class Log {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306"
-					+ "/ticket?user="+ReadConfig.dbUserName+"&password="+ReadConfig.dbPassword);
+					+ "/"+ReadConfig.dbName+"?user="+ReadConfig.dbUserName+"&password="+ReadConfig.dbPassword);
 			return conn.createStatement();
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
