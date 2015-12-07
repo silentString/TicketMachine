@@ -3,7 +3,7 @@ This is a small system about sale ticket use state pattern, you can understand t
 
 If you want use DB to store sale log and use statistics function, you must build a database table, the column name is as below:
 
-id (bigint, primary key, increment)/t
+id (bigint, primary key, increment)\t
 date_time (datetime)
 station_name (text)
 dest_name (text)
