@@ -27,7 +27,6 @@ public class SelectDestState implements State{
 			machine.setState(machine.getSelectTicketNumState());
 			machine.getState().waitInput();
 		}else{
-			sc.close();
 			waitInput();
 		}
 		

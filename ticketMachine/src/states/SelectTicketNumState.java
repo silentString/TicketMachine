@@ -63,8 +63,8 @@ public class SelectTicketNumState implements State{
 			
 		}else{//ticket saled
 			Log log = new Log();
-			History his = new History(new Date(), "Day pass purchase", 
-					"-", ticketNum, allPrice);
+			History his = new History(new Date(), Machine.startStation, "Day pass purchase", 
+					ticketNum, allPrice);
 			log.writeLog(his);
 			Display.dayPassSaled(ticketNum, allPrice);
 			Machine.refund -= allPrice;

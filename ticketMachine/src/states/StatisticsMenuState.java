@@ -78,7 +78,7 @@ public class StatisticsMenuState implements State{
 				String endStation = rs.getString("dest_name");
 				int tickets = rs.getInt("allTicket");
 				sum += tickets;
-				if(endStation.equals("-")){
+				if(endStation.equals("Day pass purchase")){
 					ticketNum[stations] = tickets;
 					
 				}else{
@@ -126,7 +126,7 @@ public class StatisticsMenuState implements State{
 					String endStation = rs.getString("dest_name");
 					int tickets = rs.getInt("allTicket");
 					sum += tickets;
-					if(endStation.equals("-")){
+					if(endStation.equals("Day pass purchase")){
 						ticketNum[stations] = tickets;
 						
 					}else{
